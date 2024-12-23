@@ -1,0 +1,20 @@
+﻿<Page x:Class="Zayavki.Pages.HistoryZayavka"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:local="clr-namespace:Zayavki.Pages"
+      mc:Ignorable="d"
+      Title="HistoryZayavka" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="ZayavkaDataGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding ID}" />
+                <DataGridTextColumn Header="ФИО" Binding="{Binding FIO}" />
+                <DataGridTextColumn Header="Телефон" Binding="{Binding phone}" />
+                <DataGridTextColumn Header="Email" Binding="{Binding email}" />
+                <DataGridTextColumn Header="Дата заявки" Binding="{Binding date_of_note}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>
